@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "tfkFyvbREzj7IU8/RDB/cQaKBXO3uc3t+Pzoyzpl1KE=",
+  "Source": "PetProject.Server",
+  "BasePath": "_content/PetProject.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Admin\\source\\repos\\anh310194\\AnhNguyenProject\\PetProject\\petproject.client\\petproject.client.esproj",
+      "Version": 2,
+      "Source": "petproject.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
