@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PetProject/.vs/PetProject/DesignTimeBuild/.dtbcache.v2
+/PetProject/.vs/PetProject/v17/.suo
