@@ -4,8 +4,13 @@ namespace PetProject.Server.Core.Interfaces
 {
     public interface IUnitOfWork
     {
-        IRepository<TEntity> GetRepository<TEntity>() where TEntity : BaseEntity;
+        IRepository<Feature> FeatureRepository { get; }
+        IRepository<MasterData> MasterDataRepository { get; }
+        IRepository<Role> RoleRepository { get; }
+        IRepository<RoleFeature> RoleFeatureRepository { get; }
+        IRepository<User> UserRepository { get; }
+        IRepository<UserRole> UserRoleRepository { get; }
         int SaveChanges();
-        Task SaveChangesAsync();
+        ValueTask SaveChangesAsync();
     }
 }

@@ -1,14 +1,15 @@
-﻿using PetProject.Server.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+using PetProject.Server.Core.Entities;
 using System.Linq.Expressions;
 
 namespace PetProject.Server.Core.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : BaseEntity
     {
-        TEntity Add(TEntity entity, long userId);
-        void AddRange(ICollection<TEntity> entities, long userId);
-        Task<TEntity> AddAsync(TEntity entity, long userId, CancellationToken cancellationToken = default);
-        Task AddRangeAsync(ICollection<TEntity> entities, long userId, CancellationToken cancellationToken = default);
+        TEntity Insert(TEntity entity, long userId);
+        void InsertRange(ICollection<TEntity> entities, long userId);
+        ValueTask<EntityEntry<TEntity>> InsertAsync(TEntity entity, long userId, CancellationToken cancellationToken = default);
+        Task InsertRangeAsync(ICollection<TEntity> entities, long userId, CancellationToken cancellationToken = default);
         TEntity Update(TEntity entity, long userId);
         void UpdateRange(ICollection<TEntity> entities, long userId);
         void Delete(object id);
